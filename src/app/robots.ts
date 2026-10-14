@@ -12,11 +12,12 @@ export const dynamic = 'force-static';
  * disagreed, and the pages won.
  */
 export default function robots(): MetadataRoute.Robots {
+  const disallow = NOINDEX_ROUTES.map((r) => `${r}/`);
   return {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: NOINDEX_ROUTES.map((r) => `${r}/`),
+      ...(disallow.length > 0 ? { disallow } : {}),
     },
     sitemap: `${SITE.url}/sitemap.xml`,
     host: SITE.url,

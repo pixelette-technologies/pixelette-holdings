@@ -226,10 +226,10 @@ export const FOOTER_NAV = [
 /**
  * Routes excluded from indexing.
  *
- * Enforced in code and in the generated robots file, not left to a plugin
- * setting or an editor's discretion.
+ * Enforced in page metadata, the generated robots file, and (when non-empty)
+ * any matching X-Robots-Tag headers. Empty = nothing gated.
  */
-export const NOINDEX_ROUTES = ['/apply/thank-you'];
+export const NOINDEX_ROUTES: readonly string[] = [];
 
 /**
  * The site-wide financial-promotion notice.

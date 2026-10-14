@@ -6,7 +6,6 @@ export const metadata = pageMetadata({
   description:
     'This page is not a receipt. A backup may be stored when you submit, but Pixelette receives the enquiry when you send the email that opens.',
   path: '/apply/thank-you',
-  noIndex: true,
 });
 
 export default function ApplyThankYouPage() {

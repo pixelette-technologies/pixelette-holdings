@@ -19,10 +19,6 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'
 
-# The application receipt route is not a public page.
-/apply/thank-you/*
-  X-Robots-Tag: noindex, nofollow
-
 # Next.js emits content-hashed filenames under /_next/static, so these are
 # safe to cache immutably for a year.
 /_next/static/*
