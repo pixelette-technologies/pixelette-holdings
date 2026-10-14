@@ -18,15 +18,6 @@ export const SITE = {
 } as const;
 
 /**
- * Default Open Graph / Twitter share image (1200×630 PNG or JPG).
- *
- * Place the file at `public/media/og-image.png`, then set this to
- * `'/media/og-image.png'`. Root layout and `pageMetadata` both read this, so
- * every page that uses the helper (and the site default) picks it up.
- */
-export const OG_IMAGE: string | null = null;
-
-/**
  * Group companies and brands.
  *
  * NAMING DISCIPLINE: "Ltd" and a company number appear only where a registered

@@ -7,7 +7,7 @@ import { AssistantBoundary } from '@/components/AssistantBoundary';
 import { SiteAssistant } from '@/components/SiteAssistant';
 import { pixContext } from '@/lib/pix/server-context';
 import { SITE } from '@/content/site';
-import { absoluteUrl, shareImageMetadata } from '@/lib/seo';
+import { absoluteUrl, DEFAULT_OG_IMAGE, shareImageMetadata } from '@/lib/seo';
 import './globals.css';
 import '@/components/pixsignal.css';
 import './asst.css';
@@ -65,7 +65,7 @@ const DEFAULT_TITLE = 'Pixelette Holdings | HSE Venture Partnership';
 const DEFAULT_DESCRIPTION =
   'Pixelette Holdings partners with selected founders to develop, launch and grow technology ventures through its Hybrid Sweat Equity model.';
 
-const { openGraphImages, twitterCard, twitterImages } = shareImageMetadata();
+const { openGraphImages, twitterCard, twitterImages } = shareImageMetadata(DEFAULT_OG_IMAGE);
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -87,13 +87,13 @@ export const metadata: Metadata = {
     url: absoluteUrl('/'),
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
-    ...(openGraphImages ? { images: openGraphImages } : {}),
+    images: openGraphImages,
   },
   twitter: {
     card: twitterCard,
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
-    ...(twitterImages ? { images: twitterImages } : {}),
+    images: twitterImages,
   },
   robots: {
     index: true,

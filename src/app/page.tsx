@@ -5,6 +5,7 @@ import {
 import { Testimonials } from '@/components/Testimonials';
 import { ventures } from '@/content/ventures';
 import { HOMEPAGE_TESTIMONIALS } from '@/content/testimonials';
+import { HOMEPAGE_POSITIONING } from '@/content/company';
 import { CAPITAL_STATEMENT, FOOTER_NOTICE } from '@/content/site';
 import { Orbit } from '@/components/Orbit';
 import { pageMetadata } from '@/lib/seo';
@@ -109,7 +110,7 @@ export default function HomePage() {
         <div className="wrap hero-grid">
           <div>
             <p className="eyebrow">Pixelette Holdings</p>
-            <h1 className="h1">Build your venture with the people who deliver it</h1>
+            <h1 className="h1">{HOMEPAGE_POSITIONING.h1}</h1>
             <p className="lead">
               Pixelette Holdings partners with selected founders to develop, launch and grow
               technology ventures. Through our Hybrid Sweat Equity model, we combine agreed cash
