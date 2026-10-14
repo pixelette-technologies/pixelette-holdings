@@ -9,7 +9,7 @@
 export const SITE = {
   name: 'Pixelette Holdings',
   legalName: 'Pixelette Holdings Ltd',
-  companyNumber: '11716825',
+  companyNumber: '14921782',
   registeredOffice: '77 Fulham Palace Road, London W6 8JA',
   jurisdiction: 'England and Wales',
   url: 'https://pixeletteholdings.com',
@@ -36,7 +36,7 @@ export const SITE = {
 export const GROUP = {
   technologies: {
     name: 'Pixelette Technologies Ltd',
-    companyNumber: '11716825',
+    companyNumber: '14921782',
     capability: 'Build',
     isRegisteredCompany: true,
   },
@@ -54,7 +54,7 @@ export const GROUP = {
   },
   holdings: {
     name: 'Pixelette Holdings Ltd',
-    companyNumber: '11716825',
+    companyNumber: '14921782',
     capability: 'Align',
     isRegisteredCompany: true,
   },

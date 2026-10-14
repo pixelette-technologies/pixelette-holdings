@@ -31,7 +31,7 @@ export const company = {
   shortName: 'Pixelette',
   crn: SITE.companyNumber,
   registeredIn: SITE.jurisdiction,
-  /** Companies House incorporation year for CRN 11716825. */
+  /** Companies House incorporation year for CRN 14921782. */
   incorporated: 2018,
   addressLine: SITE.registeredOffice,
   /** Same string as the homepage H1 / social-card alt. */
