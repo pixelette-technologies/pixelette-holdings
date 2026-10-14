@@ -10,7 +10,7 @@ import { Orbit } from '@/components/Orbit';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
-  title: 'Pixelette Holdings | HSE venture partnership',
+  title: 'Pixelette Holdings | HSE Venture Partnership',
   description:
     'Pixelette Holdings partners with selected founders to develop, launch and grow technology ventures through its Hybrid Sweat Equity model.',
   path: '/',

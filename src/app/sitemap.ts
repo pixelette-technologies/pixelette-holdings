@@ -15,7 +15,6 @@ const ROUTES: { path: string; priority: number; changeFrequency: MetadataRoute.S
   { path: '/insights/founder-control-and-equity-dilution', priority: 0.6, changeFrequency: 'yearly' },
   { path: '/insights/from-mvp-to-investment-readiness', priority: 0.6, changeFrequency: 'yearly' },
   { path: '/apply', priority: 0.8, changeFrequency: 'monthly' },
-  { path: '/apply/thank-you', priority: 0.1, changeFrequency: 'yearly' },
   { path: '/contact', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/privacy', priority: 0.3, changeFrequency: 'yearly' },
   { path: '/terms', priority: 0.3, changeFrequency: 'yearly' },

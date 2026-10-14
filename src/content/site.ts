@@ -18,6 +18,15 @@ export const SITE = {
 } as const;
 
 /**
+ * Default Open Graph / Twitter share image (1200×630 PNG or JPG).
+ *
+ * Place the file at `public/media/og-image.png`, then set this to
+ * `'/media/og-image.png'`. Root layout and `pageMetadata` both read this, so
+ * every page that uses the helper (and the site default) picks it up.
+ */
+export const OG_IMAGE: string | null = null;
+
+/**
  * Group companies and brands.
  *
  * NAMING DISCIPLINE: "Ltd" and a company number appear only where a registered
@@ -164,7 +173,7 @@ export interface NavItem {
  *
  * Labels are relabels, not new routes: "How It Works" is the five-gate section
  * on /hse-model (vercel.json already 301s /how-it-works there), and "The Group"
- * is /capabilities.
+ * redirects from /capabilities to /about/#the-group.
  *
  * NOTE: SiteHeader renders top-level items only. There is no dropdown and no
  * `dropdown` rule in globals.css, so the sub-item arrays that used to sit here

@@ -5,7 +5,7 @@ import { pageMetadata } from '@/lib/seo';
 
 const TITLE = 'Startups and venture programmes';
 const DESCRIPTION =
-  'Pixelette Holdings is a startup development partner for founders, incubators and accelerators, including startup equity partnership and support for venture programmes.';
+  'Whether you are building a technology venture or supporting a programme of emerging businesses, Pixelette Holdings brings specialist delivery and flexible partnership structures to help selected ventures progress.';
 
 export const metadata = {
   ...pageMetadata({
@@ -26,7 +26,7 @@ export const metadata = {
 const faqs = [
   {
     q: 'Does Pixelette Holdings work with startups and venture programmes?',
-    a: 'Pixelette Holdings is a startup development partner for founders, incubators and accelerators, including startup equity partnership and support for venture programmes.',
+    a: 'Whether you are building a technology venture or supporting a programme of emerging businesses, Pixelette Holdings brings specialist delivery and flexible partnership structures to help selected ventures progress.',
   },
 ];
 

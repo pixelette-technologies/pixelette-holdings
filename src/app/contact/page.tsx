@@ -6,14 +6,14 @@ import { ContactForm } from './ContactForm';
 export const metadata = pageMetadata({
   title: 'Contact',
   description:
-    'Contact Pixelette Holdings about a general enquiry, a strategic partnership, an incubator or accelerator programme, or a capital relationship. Founders should explore a partnership.',
+    'Choose the enquiry that fits. Contact Pixelette Holdings about a general, strategic, incubator or capital enquiry. Founders should explore a partnership on the apply page.',
   path: '/contact',
 });
 
 const faqs = [
   {
     q: 'How do I contact Pixelette Holdings?',
-    a: 'Contact Pixelette Holdings about a general enquiry, a strategic partnership, an incubator or accelerator programme, or a capital relationship. Founders should explore a partnership on the apply page.',
+    a: 'Choose the enquiry that fits. Contact Pixelette Holdings about a general, strategic, incubator or capital enquiry. Founders should explore a partnership on the apply page.',
   },
 ];
 

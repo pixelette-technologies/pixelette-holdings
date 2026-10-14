@@ -7,6 +7,7 @@ export const metadata = pageMetadata({
   description:
     'Why a working product, user evidence, commercial validation and investment preparation are different stages, and why none of them guarantees external investment.',
   path: '/insights/from-mvp-to-investment-readiness',
+  ogType: 'article',
 });
 
 export default function ArticlePage() {

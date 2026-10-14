@@ -7,6 +7,7 @@ import { AssistantBoundary } from '@/components/AssistantBoundary';
 import { SiteAssistant } from '@/components/SiteAssistant';
 import { pixContext } from '@/lib/pix/server-context';
 import { SITE } from '@/content/site';
+import { absoluteUrl, shareImageMetadata } from '@/lib/seo';
 import './globals.css';
 import '@/components/pixsignal.css';
 import './asst.css';
@@ -60,36 +61,39 @@ const plexMono = IBM_Plex_Mono({
   display: 'swap',
 });
 
+const DEFAULT_TITLE = 'Pixelette Holdings | HSE Venture Partnership';
+const DEFAULT_DESCRIPTION =
+  'Pixelette Holdings partners with selected founders to develop, launch and grow technology ventures through its Hybrid Sweat Equity model.';
+
+const { openGraphImages, twitterCard, twitterImages } = shareImageMetadata();
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: 'Pixelette Holdings | HSE Venture Partnership',
+    default: DEFAULT_TITLE,
     template: '%s | Pixelette Holdings',
   },
   // No percentage here. This description is inherited by every route that does
   // not set its own, and a bare figure in metadata cannot carry the "worked
   // example" qualifier that the on-page copy does — it would read as the
   // universal HSE structure, which it is not.
-  description:
-    'Pixelette Holdings partners with selected founders through Hybrid Sweat Equity: agreed professional services in exchange for a combination of cash fees and equity participation.',
+  description: DEFAULT_DESCRIPTION,
   applicationName: SITE.name,
   authors: [{ name: SITE.legalName }],
   openGraph: {
     type: 'website',
     locale: SITE.locale,
     siteName: SITE.name,
-    url: SITE.url,
-    title: 'Pixelette Holdings | HSE Venture Partnership',
-    description:
-      'Pixelette Holdings partners with selected founders through Hybrid Sweat Equity: agreed professional services in exchange for cash fees and equity participation.',
-    images: [{ url: '/media/og-image.png', width: 1200, height: 630, alt: 'Pixelette Holdings, Hybrid Sweat Equity' }],
+    url: absoluteUrl('/'),
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    ...(openGraphImages ? { images: openGraphImages } : {}),
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Pixelette Holdings | HSE Venture Partnership',
-    description:
-      'Pixelette Holdings partners with selected founders through Hybrid Sweat Equity: agreed professional services in exchange for cash fees and equity participation.',
-    images: ['/media/og-image.png'],
+    card: twitterCard,
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    ...(twitterImages ? { images: twitterImages } : {}),
   },
   robots: {
     index: true,
@@ -118,9 +122,9 @@ const organizationSchema = {
     'Pixelette Holdings is a UK venture-building group. It partners with selected founders to develop, launch and grow technology ventures through its Hybrid Sweat Equity model, combining agreed cash contributions with equity participation set out in the relevant agreements.',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: '20 Wenlock Road',
+    streetAddress: '77 Fulham Palace Road',
     addressLocality: 'London',
-    postalCode: 'N1 7GU',
+    postalCode: 'W6 8JA',
     addressCountry: 'GB',
   },
   identifier: {

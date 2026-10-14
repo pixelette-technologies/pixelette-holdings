@@ -7,6 +7,7 @@ export const metadata = pageMetadata({
   description:
     'Economic ownership and decision-making rights are different. What to read in voting, reserved matters, vesting and exit clauses before signing a shareholder arrangement.',
   path: '/insights/founder-control-and-equity-dilution',
+  ogType: 'article',
 });
 
 export default function ArticlePage() {

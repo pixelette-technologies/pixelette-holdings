@@ -7,6 +7,7 @@ export const metadata = pageMetadata({
   description:
     'What a technology startup should test before engineering starts: the problem, the customer, the commercial assumption, MVP scope and the resources the work will actually take.',
   path: '/insights/building-a-technology-startup',
+  ogType: 'article',
 });
 
 export default function ArticlePage() {

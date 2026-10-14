@@ -7,14 +7,14 @@ import { pageMetadata } from '@/lib/seo';
 export const metadata = pageMetadata({
   title: 'Explore a partnership',
   description:
-    'Tell us about your venture. Share a few details and Pixelette Holdings will review your enquiry. It does not create a partnership or an investment commitment, and it does not promise a reply by a set date.',
+    'Share a few details about your venture. Pixelette Holdings will review your enquiry and explore whether there may be an opportunity to work together. An enquiry does not create a partnership or investment commitment.',
   path: '/apply',
 });
 
 const faqs = [
   {
     q: 'How do I explore a partnership with Pixelette Holdings?',
-    a: 'Tell us about your venture on the apply page. Submitting an enquiry does not create a partnership or an investment commitment, and it does not promise a reply by a set date.',
+    a: 'Share a few details about your venture on the apply page. Pixelette Holdings will review your enquiry and explore whether there may be an opportunity to work together. An enquiry does not create a partnership or investment commitment.',
   },
 ];
 
@@ -82,7 +82,7 @@ export default function ApplyPage() {
         <SectionHead
           eyebrow="The enquiry"
           title="The information to include"
-          lead={`The Send enquiry button opens a message to ${CONTACT.email} in your own email program. This website does not store what you type, and Pixelette receives it only when you send that message.`}
+          lead={`Send enquiry saves a backup copy when configured, then opens a message to ${CONTACT.email} in your own email program. Pixelette receives the enquiry when you send that message.`}
         />
         <FitAssessmentForm />
       </Section>

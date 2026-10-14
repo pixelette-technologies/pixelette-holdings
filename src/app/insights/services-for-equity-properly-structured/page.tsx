@@ -7,6 +7,7 @@ export const metadata = pageMetadata({
   description:
     'How a services-for-equity partnership can combine cash and shares, and why ownership, milestones and governance have to be written down for that venture.',
   path: '/insights/services-for-equity-properly-structured',
+  ogType: 'article',
 });
 
 export default function ArticlePage() {

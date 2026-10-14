@@ -4,7 +4,7 @@ import { pageMetadata } from '@/lib/seo';
 export const metadata = pageMetadata({
   title: 'Enquiry',
   description:
-    'This page is not a receipt. An email you send yourself is the message that can be received.',
+    'This page is not a receipt. A backup may be stored when you submit, but Pixelette receives the enquiry when you send the email that opens.',
   path: '/apply/thank-you',
   noIndex: true,
 });
@@ -15,7 +15,7 @@ export default function ApplyThankYouPage() {
       <PageHero
         eyebrow="Explore a partnership"
         title="This page is not a receipt"
-        lead="The enquiry form on this website does not send what you type. An email you send yourself is the message that can be received. This address does not confirm that a message has arrived."
+        lead="Submitting stores a backup copy when configured, then opens an email for you to send. Pixelette receives the enquiry when that message is sent. This page is not a receipt."
       />
 
       <Section>

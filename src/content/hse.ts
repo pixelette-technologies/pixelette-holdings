@@ -107,10 +107,11 @@ export const STRUCTURES = [
 ] as const;
 
 /**
- * The founder's cash share of the agreed professional fee.
+ * Worked-example cash share of an agreed professional fee.
  *
- * Load-bearing: it appears in the site-wide meta description as well as on
- * /hse-model, so a change here is a change to every route's metadata.
+ * Not used in site-wide meta descriptions — a bare percentage in metadata
+ * would read as a universal HSE structure. On-page copy may still reference it
+ * with the worked-example qualifier where that is appropriate.
  */
 export const FOUNDER_CASH_PCT = 50;
 

@@ -7,7 +7,7 @@ import { pageMetadata } from '@/lib/seo';
 export const metadata = pageMetadata({
   title: 'Hybrid Sweat Equity',
   description:
-    'How Hybrid Sweat Equity works: agreed professional services in exchange for cash fees and equity participation, with the detailed terms set out in each venture’s agreements.',
+    'Pixelette contributes agreed professional services in exchange for a combination of cash fees and equity participation. Terms are set out in each venture’s commercial and shareholder agreements.',
   path: '/hse-model',
 });
 
